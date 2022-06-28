@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { TextField, Button, Typography, Paper } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
+// import { useNavigate } from 'react-router-dom';
 import FileBase from 'react-file-base64';
 
 import useStyles from './styles';
@@ -38,7 +39,7 @@ const Form = ({ currentId, setCurrentId }) => {
     return (
       <Paper className={classes.paper}>
         <Typography variant='h6' align='center'>
-          Please Sign In To Create  Challenges.
+          Please Sign In To Create  Challenges and Vote.
         </Typography>
       </Paper>
     )

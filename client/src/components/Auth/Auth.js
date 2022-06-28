@@ -8,6 +8,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import useStyles from './styles';
 import Input from './Input';
 import { signin, signup } from '../../actions/auth';
+// import { AUTH } from '../../constants/actionTypes';
 
 const initalState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '' }
 
@@ -56,7 +57,7 @@ const Auth = () => {
 
   const onGoogleFailure = (error) => {
     console.log(error);
-      console.log('Login Failed');
+      alert('Login Failed');
   }
 
   return (

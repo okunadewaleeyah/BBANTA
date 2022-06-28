@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AppBar, Avatar, Button, Toolbar, Typography } from '@material-ui/core';
 
 import betabanta from '../../images/betabanta-logos-blacks.png';
+import * as actionType from '../../constants/actionTypes';
 import useStyles from './styles';
 import { useDispatch } from 'react-redux';
 import { useNavigate, useLocation } from 'react-router-dom'
@@ -16,7 +17,7 @@ function Navbar() {
     const location = useLocation()
 
     const logout = () => {
-      dispatch({ type: 'LOGOUT' })
+      dispatch({ type: actionType.LOGOUT })
 
       navigate('/')
 
