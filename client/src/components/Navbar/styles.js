@@ -18,11 +18,11 @@ export default makeStyles((theme) => ({
     color: "#000",
     textDecoration: 'none',
     fontSize: '2em',
-    fontWeight: 300,
+    fontWeight: 400,
   },
   image: {
     marginLeft: '10px',
-    marginTop: '5px',
+    marginTop: '0px',
   },
   toolbar: {
     display: 'flex',
@@ -50,6 +50,7 @@ export default makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     textAlign: 'center',
+    marginLeft: '20px',
   },
   brandContainer: {
     display: 'flex',
@@ -58,5 +59,9 @@ export default makeStyles((theme) => ({
   purple: {
     color: theme.palette.getContrastText(deepPurple[500]),
     backgroundColor: deepPurple[500],
+  },
+  gold: {
+    color: 'white',
+    backgroundColor: 'rgb(22, 125, 139)',
   },
 }));
